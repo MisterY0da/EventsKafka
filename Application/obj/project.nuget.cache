@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "TtTqbn9ogj9Pf3hwbsxPgO2cVICVNssB1atTtkv/k4WFp7iDVpfiEJbbVGqEo882FZbXVg+nAqNPgYluqWTcWA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\usual\\source\\repos\\EventsKafka\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\usual\\.nuget\\packages\\confluent.kafka\\2.3.0\\confluent.kafka.2.3.0.nupkg.sha512",
+    "C:\\Users\\usual\\.nuget\\packages\\librdkafka.redist\\2.3.0\\librdkafka.redist.2.3.0.nupkg.sha512",
+    "C:\\Users\\usual\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\usual\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\usual\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\usual\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

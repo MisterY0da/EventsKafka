@@ -1,0 +1,37 @@
+﻿version: '3.4'
+
+networks:
+  services-network:
+    driver: bridge 
+
+services:
+  EventsKafka:
+    container_name: eventskafka
+    image: eventskafka:latest
+    build:
+      context: EventsKafka
+      dockerfile: Dockerfile
+    ports:
+      - "5051:80"
+    networks:
+      - services-network
+
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+      - "2181:2181"
+    networks:
+    - services-network
+
+  kafka:
+    image: wurstmeister/kafka
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: kafka
+      KAFKA_CREATE_TOPICS: "mactopic"
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+    - services-network

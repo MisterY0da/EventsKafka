@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "jPVoVKSRElKECMZYXc+9vOKkebiPdRXgDmrhKG074c8=",
+  "Source": "EventsKafka",
+  "BasePath": "_content/EventsKafka",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
