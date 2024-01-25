@@ -8,8 +8,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<KafkaProducerService>();
-builder.Services.AddScoped<KafkaConsumerService>();
+builder.Services.AddTransient<KafkaProducerService>();
+builder.Services.AddTransient<KafkaConsumerService>();
 
 var app = builder.Build();
 
